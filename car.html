@@ -10,6 +10,8 @@
 	<link href="css/icons-extra.css" rel="stylesheet"/>
 	<link href="css/conmon.css" rel="stylesheet"/>
 	<link href="css/car.css" rel="stylesheet"/>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/car.js"></script>
     <script type="text/javascript" charset="utf-8">
       	mui.init();
     </script>
@@ -18,7 +20,7 @@
 	<header class="mui-bar mui-bar-nav">
 	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 	    <h1 class="mui-title">购物车</h1>
-	    <span class="mui-icon mui-icon-trash mui-icon-right-nav mui-pull-right"></span>
+	    <span class="mui-icon mui-icon-trash mui-icon-right-nav mui-pull-right del"></span>
 	</header>
 	<nav class="mui-bar mui-bar-tab">
 	    <a class="mui-tab-item">
@@ -40,15 +42,15 @@
 	</nav>
 	<div class="mui-content">
 	    <ul class="mui-table-view">
-	        <li class="mui-table-view-cell mui-media">
+	        <li class="mui-table-view-cell mui-media lists">
 	        	<a href="javascript:;">
 	        		<div class="mui-media-body">
 	                	<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
 	                    	新疆无籽红提  新鲜水果
 	                    <p class="mui-ellipsis">
-	                    	<span>￥19.90</span>
+	                    	<span>￥<span class="price">20</span></span>
 	                    </p>
-	                    <div class="mui-numbox numbox mui-pull-right" data-numbox-step='1' data-numbox-min='0' data-numbox-max='10'>
+	                    <div class="mui-numbox numbox mui-pull-right" data-numbox-step='1' data-numbox-min='1' data-numbox-max='10'>
                 		    <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
                 		    <input class="mui-input-numbox" type="number" />
                 		    <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
@@ -56,15 +58,15 @@
 	                </div>
 	            </a>
 	        </li>
-	       	<li class="mui-table-view-cell mui-media">
+	       	<li class="mui-table-view-cell mui-media lists">
 	        	<a href="javascript:;">
 	        		<div class="mui-media-body">
 	                	<img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
 	                    	新疆无籽红提  新鲜水果
 	                    <p class="mui-ellipsis">
-	                    	<span>￥19.90</span>
+	                    	<span>￥<span class="price">10</span></span>
 	                    </p>
-	                    <div class="mui-numbox numbox mui-pull-right" data-numbox-step='1' data-numbox-min='0' data-numbox-max='10'>
+	                    <div class="mui-numbox numbox mui-pull-right" data-numbox-step='1' data-numbox-min='1' data-numbox-max='10'>
                 		    <button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
                 		    <input class="mui-input-numbox" type="number" />
                 		    <button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
@@ -72,22 +74,22 @@
 	                </div>
 	            </a>
 	        </li>
+	        
 	    </ul>
 	    
 	    <div class="footerBox">
 	    	<div class="mui-input-row mui-checkbox mui-pull-left mui-left">
-				<input name="checkbox1" value="Item 1" type="checkbox" checked>
+				<input name="checkbox1" value="Item1" type="checkbox" checked>
 			  	<label>全选</label>
 			</div>
 			<div class="mui-pull-right addBox">
 				<span>合计</span>
-				<span><span>￥</span>41.90</span>
-				<button type="button" class="mui-btn">结算（<span>2</span>）</button>
+				<span>￥<span class="priBox"></span></span>
+				<button type="button" class="mui-btn">结算（<span class="num"></span>）</button>
 			</div>
-	    </div>
-	    
-	    
+	    </div>   
 	</div>
+
 	
 	
 </body>
